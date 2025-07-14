@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.example.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.278 s <<< FAILURE! - in com.example.UserControllerTest
+com.example.UserControllerTest  Time elapsed: 0.278 s  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/servlet/Filter
+	at org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTypeExcludeFilter.<clinit>(WebMvcTypeExcludeFilter.java:66)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer.instantiateTypeExcludeFilter(TypeExcludeFiltersContextCustomizer.java:63)
+	at org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer.instantiateTypeExcludeFilters(TypeExcludeFiltersContextCustomizer.java:53)
+	at org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer.<init>(TypeExcludeFiltersContextCustomizer.java:46)
+	at org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizerFactory.createContextCustomizer(TypeExcludeFiltersContextCustomizerFactory.java:57)
+	at org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizerFactory.createContextCustomizer(TypeExcludeFiltersContextCustomizerFactory.java:51)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.getContextCustomizers(AbstractTestContextBootstrapper.java:402)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:374)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:309)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:262)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:107)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:102)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:137)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:122)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:294)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:113)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 19 more
+
