@@ -1,4 +1,0 @@
-com\example\jwtservice\security\SecurityConfig.class
-com\example\jwtservice\Controller\AuthController.class
-com\example\jwtservice\JwtserviceApplication.class
-com\example\jwtservice\util\JwtUtil.class
